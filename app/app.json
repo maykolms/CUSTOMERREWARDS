@@ -1,0 +1,43 @@
+{
+  "id": "c3e452b5-ac46-4254-b312-57f6f13c9b6f",
+  "name": "CustomersRewards",
+  "publisher": "Maykol",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "contextSensitiveHelpUrl":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+  "dependencies": [],
+  "screenshots":  [],
+
+"application":  "19.0.0.0",
+
+ "platform":  "1.0.0.0",
+
+ "idRanges":  [
+
+              {
+
+                "from":  70100,
+
+                 "to":  70150
+
+              }
+
+              ],  
+
+ "features":  ["TranslationFile"],
+
+"runtime": "8.0",
+
+"target":  "OnPrem",
+
+"resourceExposurePolicy": {"allowDebugging": true, "allowDownloadingSource": false, "includeSourceInSymbolFile": false},
+
+"applicationInsightsConnectionString": "11111111-2222-3333-4444-555555555555"
+
+}

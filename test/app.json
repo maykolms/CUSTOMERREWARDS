@@ -1,0 +1,60 @@
+{
+  "id": "9cd676c7-b24d-49dc-92ab-e2ec08188216",
+  "name":  "Plur-E App (TDD)",
+  "publisher":  "Plur-e.com",
+  "brief":  "Plur-E App for AppSource tests",
+  "description":  "Hello World sample test app for AppSource",
+  "version":  "1.0.0.0",
+  "privacyStatement":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+  "EULA":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+  "help":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+  "url":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+  "contextSensitiveHelpUrl":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+  "logo":  "",
+  "dependencies":  [
+                       {
+                           "id":  "23de40a6-dfe8-4f80-80db-d70f83ce8caf",
+                           "publisher":  "Microsoft",
+                           "name":  "Test Runner",
+                           "version":  "19.0.0.0"
+                       },
+                       {
+                        "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+                        "publisher": "Microsoft",
+                        "name": "Library Assert",
+                        "version": "19.0.0.0"
+                      },
+                      {
+                        "id": "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
+                        "publisher": "Microsoft",
+                        "name": "Any",
+                        "version": "19.0.0.0"
+                      },
+                      {
+                        "id": "5d86850b-0d76-4eca-bd7b-951ad998e997",
+                        "publisher": "Microsoft",
+                         "name": "Tests-TestLibraries",
+                         "version": "19.0.0.0"
+                      },
+                       {
+                        "id": "c3e452b5-ac46-4254-b312-57f6f13c9b6f",
+                        "name": "CustomersRewards",
+                        "publisher": "Maykol",
+                           "version":  "1.0.0.0"
+                       }
+                   ],
+"screenshots":  [],
+"application":  "19.0.0.0",
+ "platform":  "1.0.0.0",
+ "idRanges":  [
+              {
+                "from":  80100,
+                 "to":  80200
+              }
+              ],  
+ "features":  ["TranslationFile"],
+"runtime": "8.0", 
+"target":  "OnPrem",
+"resourceExposurePolicy": {"allowDebugging": true, "allowDownloadingSource": false, "includeSourceInSymbolFile": false},
+"applicationInsightsConnectionString": "11111111-2222-3333-4444-555555555555"
+}

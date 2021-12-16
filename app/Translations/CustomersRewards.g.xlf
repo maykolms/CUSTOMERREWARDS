@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="CustomersRewards">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1045640671 - Field 42161563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ActivationCode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Activation Code Information - Field ActivationCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1045640671 - Field 4008478851 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Activated</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Activation Code Information - Field Date Activated - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1045640671 - Field 1579714849 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expiration Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Activation Code Information - Field Expiration Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 183228665 - Field 3113209707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Rewards Ext. Mgt. Codeunit ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Rewards Mgt. Setup - Field Customer Rewards Ext. Mgt. Codeunit ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 183228665 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Rewards Mgt. Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1835118323 - Field 1789400218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Reward Level - Field Level - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1835118323 - Field 162823490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Minimum Reward Points</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Reward Level - Field Minimum Reward Points - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 356580241 - NamedType 2295508996" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NONE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Customer Rewards Ext. Mgt. - NamedType NoRewardlevelTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Rewards assisted setup guide</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 368964769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control FinalPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3559045584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You're done!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control ActivationDone - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3882300021 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Click Finish to setup your rewards level and start using Customer Rewards.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control DoneMessage - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3882300021 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control DoneMessage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 1758016366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control FirstHalfPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 1767071661 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Welcome</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Welcome User - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 4074843382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3549826426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Name: </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control UserName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3080618677 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please enter your user name or email address.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Message - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3080618677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Message - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 1966572419 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control FirstPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3800514526 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Welcome</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Welcome - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 203669508 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This Customer Rewards extension is a sample extension. It adds rewards tiers support for Customers.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Introduction - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 203669508 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Introduction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 773332919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Terms of Use</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 4227742000 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>By enabling the Customer Rewards extension...</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Terms1 - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 4227742000 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Terms1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 570471321 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Terms2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 2762510287 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>I understand and accept these terms.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control EnableFeature - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 2332231641 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control MediaStandard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3276474741 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control SecondPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 245901840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control Activation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 2287255393 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter your 14 digit activation code to continue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control ActivationMessage - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 2287255393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control ActivationMessage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Action 4173880961 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Action ActionActivate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Action 2438272767 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Action ActionBack - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Action 3259912055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finish</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Action ActionFinish - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1074965917 - Action 914282563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Next</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Action ActionNext - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2885266364 - NamedType 2504299260" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Rewards is not activated</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Rewards Level List - NamedType NotActivatedTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2885266364 - Control 1789400218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the level of reward that the customer has at this point.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Rewards Level List - Control Level - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2885266364 - Control 162823490 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of points that customers must have to reach this level.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Rewards Level List - Control Minimum Reward Points - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 235027817 - Control 625069603 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Specifies the level of reward that the customer has at this point.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer Card Ext. - Control RewardLevel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 235027817 - Control 625069603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Reward Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer Card Ext. - Control RewardLevel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 235027817 - Control 3873991356 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Specifies the total number of points that the customer has at this point.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer Card Ext. - Control RewardPoints - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 235027817 - Control 3873991356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Reward Points</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer Card Ext. - Control RewardPoints - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3689363899 - Action 3511348062 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Open the list of reward levels.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer List Ext. - Action Reward Levels - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1565696239 - Field 3873991356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>RewardPoints</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CustomerTable Ext. - Field RewardPoints - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

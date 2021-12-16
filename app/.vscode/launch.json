@@ -1,0 +1,39 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Microsoft cloud sandbox",
+//             "request": "launch",
+//             "type": "al",
+//             "environmentType": "Sandbox",
+//             "environmentName": "Ivan",
+//             "tenant": "f5d68211-2a97-44dc-8b3b-fdfdf8075073",
+//             //"startupObjectId": 22,
+//             "startupObjectType": "Page",
+//             "breakOnError": true,
+//             "launchBrowser": true,
+//             "dependencyPublishingOption": "Ignore",
+//         }
+//     ]
+// }
+
+{
+    "version":  "0.2.0",
+    "configurations":  [
+                           {
+                               "type":  "al",
+                               "request":  "launch",
+                               "name":  "Local Sandbox",
+                               "server":  "http://dockerforplure19-appsource-ci",
+                               "serverInstance":  "BC",
+                               "port":  7049,
+                               "tenant":  "default",
+                               "authentication":  "UserPassword",
+                               "startupObjectId":  130451,
+                               "startupObjectType":  "Page",
+                               "schemaUpdateMode": "ForceSync",
+                               "breakOnError":  true
+                           }
+                       ]
+}
+//https://businesscentral.dynamics.com/1764922a-f964-47b6-a65b-7988b8e4e07e/SandboxCA8

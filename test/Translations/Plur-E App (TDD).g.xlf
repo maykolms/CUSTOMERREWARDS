@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Plur-E App (TDD)">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 776579378 - NamedType 294415951" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Rewards should be activated</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Customer Rewards Test - NamedType ActivatedTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 776579378 - NamedType 2739947356" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BRONZE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Customer Rewards Test - NamedType BronzeLevelTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 776579378 - NamedType 329982530" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GOLD</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Customer Rewards Test - NamedType GoldLevelTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 776579378 - NamedType 3639469649" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NONE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Customer Rewards Test - NamedType NoLevelTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 776579378 - NamedType 2504299260" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Rewards should not be activated</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Customer Rewards Test - NamedType NotActivatedTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 776579378 - NamedType 1083335843" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SILVER</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Customer Rewards Test - NamedType SilverLevelTxt</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
