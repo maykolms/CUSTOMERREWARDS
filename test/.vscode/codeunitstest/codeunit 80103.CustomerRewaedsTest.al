@@ -18,6 +18,8 @@ codeunit 80103 "Customer Rewards Test"
         GoldLevelTxt: Label 'GOLD';
         NoLevelTxt: Label 'NONE';
 
+        CodeUnitHelper: Codeunit CodeUnitHelper;
+
     [Test]
 
     procedure TestOnInstallLogic();
@@ -48,6 +50,7 @@ codeunit 80103 "Customer Rewards Test"
     procedure TestCustomerRewardsWizardTermsPage();
     var
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard";
+        booll: Boolean;
 
     begin
         // [Scenario] Check Terms Page on Wizard 
@@ -55,7 +58,7 @@ codeunit 80103 "Customer Rewards Test"
         Initialize;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365Full();////////
+        //LibraryLowerPermissions.SetO365Full();////////
 
         // [When] The Wizard is opnened 
         CustomerRewardsWizardTestPage.OpenView;
@@ -71,7 +74,7 @@ codeunit 80103 "Customer Rewards Test"
         Assert.IsTrue(CustomerRewardsWizardTestPage.EnableFeature.AsBoolean, 'Enable feature should be checked');
         Assert.IsTrue(CustomerRewardsWizardTestPage.ActionNext.Visible, 'Next should be visible');
         Assert.IsFalse(CustomerRewardsWizardTestPage.ActionFinish.Enabled, 'Finish should be disabled');
-
+        //        booll  := CustomerRewardsWizardTestPage.ActionActivate.Enabled();
         CustomerRewardsWizardTestPage.Close;
     end;
 
@@ -88,7 +91,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        //LibraryLowerPermissions.SetO365BusFull();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
 
         // [When] User invokes activate action without entering activation code 
@@ -97,7 +100,7 @@ codeunit 80103 "Customer Rewards Test"
         Assert.IsFalse(CustomerRewardsWizardTestPage.ActionFinish.Enabled, 'Finish should be disabled');
 
         // [Then] Error message displayed 
-        asserterror CustomerRewardsWizardTestPage.ActionActivate.Invoke;
+        asserterror CustomerRewardsWizardTestPage.ActionActivate.Invoke();
         Assert.AreEqual(GETLASTERRORTEXT, 'Activation code cannot be blank.', 'Invalid error message.');
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
     end;
@@ -115,7 +118,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        //LibraryLowerPermissions.SetO365BusFull();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
 
         // [When] User invokes activate action after entering short activation code 
@@ -141,7 +144,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        //LibraryLowerPermissions.SetO365BusFull();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
 
         // [When] User invokes activate action after entering long activation code 
@@ -159,6 +162,7 @@ codeunit 80103 "Customer Rewards Test"
     var
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt.";
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard";
+        ActivationCodeInformation: Record "Activation Code Information";
 
     begin
         // [Scenario] Error message when user tries to activate Customer Rewards with invalid activation code. 
@@ -167,14 +171,15 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365Full();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
-        MockCustomerRewardsExtMgt.MockActivationResponse(false);
+        MockCustomerRewardsExtMgt.MockActivationResponse(false);///OJO AQUI!!
 
         // [When] User invokes activate action after entering invalid but correct length activation code 
         OpenCustomerRewardsWizardActivationPage(CustomerRewardsWizardTestPage);
         CustomerRewardsWizardTestPage.Activationcode.SetValue('12345678901234');
 
+        //ActivationCodeInformation.DeleteAll();//mal?
         // [Then] Error message displayed 
         asserterror CustomerRewardsWizardTestPage.ActionActivate.Invoke;
         Assert.AreEqual(GETLASTERRORTEXT, 'Activation failed. Please check the activtion code you entered.', 'Invalid error message.');
@@ -189,12 +194,14 @@ codeunit 80103 "Customer Rewards Test"
 
     begin
         // [Scenario] Customer Rewards is activated when user enters valid activation code. 
-        // [Given] The Customer Rewards Wizard 
+        // [Given] The Customer Rewards Wizard
+        //LibraryLowerPermissions.SetO365BusFull();
+
         Initialize;
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
         MockCustomerRewardsExtMgt.MockActivationResponse(true);
 
@@ -221,7 +228,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
 
         // [When] User opens Reward Level Page 
@@ -243,7 +250,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
         ActivateCustomerRewards;
         Assert.IsTrue(CustomerRewardsExtMgt.IsCustomerRewardsActivated, ActivatedTxt);
@@ -265,7 +272,7 @@ codeunit 80103 "Customer Rewards Test"
         CustomerListTestPage.OpenView;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
 
         // [Then] Reward levels action exists on custome list page 
         Assert.IsTrue(CustomerListTestPage."Reward Levels".Visible, 'Reward Levels action should be visible');
@@ -287,7 +294,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
 
         // [When] User opens Customer List page and invokes action 
@@ -312,7 +319,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
         ActivateCustomerRewards;
         Assert.IsTrue(CustomerRewardsExtMgt.IsCustomerRewardsActivated, ActivatedTxt);
@@ -335,7 +342,7 @@ codeunit 80103 "Customer Rewards Test"
         // [Given] Customer Card Page 
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
 
         // [When] Customer card page is opened 
         CustomerCardTestPage.OpenView;
@@ -361,7 +368,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         ActivateCustomerRewards;
 
         // [When] New Customer 
@@ -390,7 +397,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         ActivateCustomerRewards;
 
         // New Customer 
@@ -423,7 +430,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         ActivateCustomerRewards;
         AddRewardLevel(BronzeLevelTxt, 2); // 2 points required for BRONZE level 
 
@@ -460,7 +467,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         ActivateCustomerRewards;
         AddRewardLevel(BronzeLevelTxt, 2); // 2 points required for BRONZE level 
 
@@ -493,7 +500,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not include SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         ActivateCustomerRewards;
         AddRewardLevel(BronzeLevelTxt, 2); // 2 points required for BRONZE level 
         AddRewardLevel(SilverLevelTxt, 3); // 3 points required for SILVER level 
@@ -536,7 +543,7 @@ codeunit 80103 "Customer Rewards Test"
         Commit;
 
         // Using permissions that do not inlcude SUPER 
-        LibraryLowerPermissions.SetO365BusFull;
+        LibraryLowerPermissions.SetO365BusFull();
         ActivateCustomerRewards;
         AddRewardLevel(BronzeLevelTxt, 2); // 2 points required for BRONZE level 
         AddRewardLevel(SilverLevelTxt, 3); // 3 points required for SILVER level 
@@ -570,6 +577,7 @@ codeunit 80103 "Customer Rewards Test"
         CustomerRewardsWizardTestPage.OpenView;
         CustomerRewardsWizardTestPage.EnableFeature.SetValue(true);
         CustomerRewardsWizardTestPage.ActionNext.Invoke;
+        CustomerRewardsWizardTestPage.ActionNext.Invoke
     end;
 
     local procedure Initialize();
@@ -577,14 +585,16 @@ codeunit 80103 "Customer Rewards Test"
         ActivationCodeInfo: Record "Activation Code Information";
         RewardLevel: Record "Reward Level";
         Customer: Record Customer;
+        CodeUnitHelper: Codeunit "CodeUnitHelper";
 
     begin
         Customer.ModifyAll(RewardPoints, 0);
         ActivationCodeInfo.DeleteAll;
         RewardLevel.DeleteAll;
-        UnbindSubscription(MockCustomerRewardsExtMgt);
-        BindSubscription(MockCustomerRewardsExtMgt);
+        UnbindSubscription(MockCustomerRewardsExtMgt);//??
+        BindSubscription(MockCustomerRewardsExtMgt);//??
         MockCustomerRewardsExtMgt.Setup;
+        //CodeUnitHelper.SetCustomerRewardsPermissionSets();
     end;
 
     local procedure ActivateCustomerRewards();

@@ -1,5 +1,8 @@
 codeunit 70101 "Customer Rewards Ext. Mgt."
 {
+
+    Permissions = TableData "Customer Rewards Mgt. Setup" = rimd;
+
     var
         DummySuccessResponseTxt: Label '{"ActivationResponse": "Success"}', Locked = true;//respuesta satisfactoria ficticia
         NoRewardlevelTxt: Label 'NONE';
@@ -68,13 +71,15 @@ codeunit 70101 "Customer Rewards Ext. Mgt."
         OnGetActivationCodeStatusFromServer(ActivationCode);
         exit(ActivationCodeInfo.Get(ActivationCode));
     end;
-
+    //??
     // publishes event 
-    [IntegrationEvent(false, false)]
+    [IntegrationEvent(false, false)]//??
     procedure OnGetActivationCodeStatusFromServer(ActivationCode: Text);
     begin
     end;
 
+
+    //??
     // Subscribes to OnGetActivationCodeStatusFromServer event and handles it when the event is raised 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Customer Rewards Ext. Mgt.", 'OnGetActivationCodeStatusFromServer', '', false, false)]
     local procedure OnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text);

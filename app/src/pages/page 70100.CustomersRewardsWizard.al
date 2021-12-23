@@ -244,7 +244,7 @@ page 70100 "Customer Rewards Wizard"// asistente de las recompensas del cliente
                     CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt.";
                     CodeunitHelper: Codeunit "CodeUnitHelper";
                 begin
-                    CodeunitHelper.SetPLurePermissionSets();
+                    CodeunitHelper.SetCustomerRewardsPermissionSets();
                     if ActivationCode = '' then
                         Error('Activation code cannot be blank.');
 
@@ -386,7 +386,7 @@ page 70100 "Customer Rewards Wizard"// asistente de las recompensas del cliente
     var
         MediaRepositoryStandard: Record 9400;
         MediaResourcesStandard: Record 2000000182;
-        Step: Option First,FirstHalf,Second,Finish;
+        Step: Option First,FirstHalf,Second,Finish;///FirstHalf
         ActivationCode: Text;
 
         UserName: Text;

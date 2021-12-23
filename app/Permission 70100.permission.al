@@ -4,7 +4,7 @@ permissionset 70148 Permission
     IncludedPermissionSets = "D365 BASIC";
     Permissions =
         tabledata "Reward Level" = RIMD,//Leer insetar modificar deletear
-        tabledata "Customer Rewards Mgt. Setup" = RIMD,
+        Tabledata "Customer Rewards Mgt. Setup" = RIMD,
         tabledata "Activation Code Information" = RIMD,
         table "Reward Level" = X,//X ejecucion
         table "Customer Rewards Mgt. Setup" = X,

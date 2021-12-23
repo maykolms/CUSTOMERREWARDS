@@ -1,8 +1,8 @@
 {
-  "id": "9cd676c7-b24d-49dc-92ab-e2ec08188216",
-  "name":  "Plur-E App (TDD)",
-  "publisher":  "Plur-e.com",
-  "brief":  "Plur-E App for AppSource tests",
+  "id": "1568570c-4a0b-487b-97d5-c4e1ec5a916f",
+  "name": "CustomersRewardsTest",
+  "publisher": "Maykol",
+  "brief":  "CustomersRewards tests",
   "description":  "Hello World sample test app for AppSource",
   "version":  "1.0.0.0",
   "privacyStatement":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",

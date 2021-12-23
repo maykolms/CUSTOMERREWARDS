@@ -1,6 +1,8 @@
 codeunit 80102 MockCustomerRewardsExtMgt
-
 {
+
+    Permissions = TableData "Customer Rewards Mgt. Setup" = rimd;
+
 
     // When set to Manual subscribers in this codeunit are bound to an event by calling the BINDSUBSCRIPTION method.  
     // This enables you to control which event subscriber instances are called when an event is raised.  

@@ -39,11 +39,13 @@ codeunit 70102 "CodeUnitHelper"
 
     end;
 
-    procedure SetPLurePermissionSets()
+    procedure SetCustomerRewardsPermissionSets()
 
     begin
 
         AddPermissionSetToUser(UserSecurityId(), 'Permission', '');
+
+
 
     end;
 }
