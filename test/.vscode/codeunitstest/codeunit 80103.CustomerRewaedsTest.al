@@ -572,6 +572,15 @@ codeunit 80103 "Customer Rewards Test"
         VerifyCustomerRewardLevel(CustomerCardTestPage.RewardLevel.Value, GoldLevelTxt);
     end;
 
+    [Test]
+    procedure TestCustomerRewardsWizardWelcomePageErrorWhenShorterUserName() //TODO
+    var
+        myInt: Integer;
+    begin
+
+    end;
+
+
     local procedure OpenCustomerRewardsWizardActivationPage(VAR CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard");
     begin
         CustomerRewardsWizardTestPage.OpenView;

@@ -120,10 +120,19 @@ page 70100 "Customer Rewards Wizard"// asistente de las recompensas del cliente
                             MultiLine = false;
                             Editable = true;
                             Caption = 'User Name: ';
+                            ToolTip = 'Nombre de usuario, debe contener almenos 3 caracteres';
 
                             trigger OnValidate();
+                            var
+                                CustomerRewardWizard: Page "Customer Rewards Wizard";
+                                tempUser: Text;
+
                             begin
-                                /////////////////////////////////////////////////// ShowFirstPage;
+                                tempUser := "UserName";
+                                if Text.StrLen(tempUser) < 3 then begin
+                                    Error('Un nombre de usuario no puede contener menos de 3 caracateres');
+                                end;
+
                             end;
                         }
                     }

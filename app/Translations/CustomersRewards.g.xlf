@@ -83,6 +83,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control entries - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1074965917 - Control 3549826426 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nombre de usuario, debe contener almenos 3 caracteres</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Rewards Wizard - Control UserName - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1074965917 - Control 3549826426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>User Name: </source>
           <note from="Developer" annotates="general" priority="2"></note>
