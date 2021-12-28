@@ -136,6 +136,7 @@ codeunit 80103 "Customer Rewards Test"
     var
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt.";
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard";
+        text2: Text;
 
     begin
         // [Scenario] Error message when user tries to activate Customer Rewards with long activation code. 
@@ -153,6 +154,7 @@ codeunit 80103 "Customer Rewards Test"
 
         // [Then] Error message displayed 
         asserterror CustomerRewardsWizardTestPage.ActionActivate.Invoke;
+        text2 := GETLASTERRORTEXT;
         Assert.AreEqual(GETLASTERRORTEXT, 'Activation code must have 14 digits.', 'Invalid error message.');
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt);
     end;
@@ -573,13 +575,75 @@ codeunit 80103 "Customer Rewards Test"
     end;
 
     [Test]
-    procedure TestCustomerRewardsWizardWelcomePageErrorWhenShorterUserName() //TODO
+    procedure TestCustomerRewardsWizardWelcomePageErrorWhenShorterUserName()
     var
-        myInt: Integer;
+        CustomerRewardsWizardTestpage: Testpage "Customer Rewards Wizard";
+        text1: Text;
+        JsonRepsonse: JsonToken;
+        Result: JsonToken;
+        error: Text;
+        flag: boolean;
+
+
     begin
 
+        // [Given] Activacion de Customer Rewards, y pasando a la segunda pagina
+        Initialize;
+        Commit;
+        error := 'Un nombre de usuario no puede contener menos de 3 caracateres';
+
+        // Using permissions that do not inlcude SUPER 
+        LibraryLowerPermissions.SetO365BusFull();
+        CustomerRewardsWizardTestpage.OpenView();
+        CustomerRewardsWizardTestpage.EnableFeature.SetValue(true);
+        CustomerRewardsWizardTestpage.ActionNext.Invoke();
+        //[When] El nombre de usuario tiene menos de 3 caracteres
+        asserterror CustomerRewardsWizardTestpage.UserName.SetValue('ab');
+        text1 := GETLASTERRORTEXT;
+        //[Then] Se espera que lanze un error por la cantidad minima de caracteres en el nombre de usuario
+
+        flag := text1.Contains(error);
+
+        //JsonRepsonse.ReadFrom(text1);
+        //JsonRepsonse.SelectToken('ActivationResponse', Result);
+        //Assert.AreEqual(Result.AsValue(), 'Un nombre de usuario no puede contener menos de 3 caracateres', 'Invalid error message.');
+        Assert.AreEqual(True, flag, 'Invalid error message.');
     end;
 
+    [Test]
+    procedure TestCustomerRewardsWizardWelcomePageWhenValidUserName()//TODO
+    var
+        CustomerRewardsWizardTestpage: Testpage "Customer Rewards Wizard";
+        text1: Text;
+        JsonRepsonse: JsonToken;
+        Result: JsonToken;
+        error: Text;
+        flag: boolean;
+
+
+    begin
+
+        // [Given] Activacion de customer reward, y pasando a la segunda pagina    
+        Initialize;
+        Commit;
+        error := 'Un nombre de usuario no puede contener menos de 3 caracateres';
+
+        // Using permissions that do not inlcude SUPER 
+        LibraryLowerPermissions.SetO365BusFull();
+        CustomerRewardsWizardTestpage.OpenView();
+        CustomerRewardsWizardTestpage.EnableFeature.SetValue(true);
+        CustomerRewardsWizardTestpage.ActionNext.Invoke();
+        //[When] El nombre de usuario tiene mas de tres caracteres 
+        CustomerRewardsWizardTestpage.UserName.SetValue('abcdf');
+        text1 := GETLASTERRORTEXT;
+        //[Then] Verificamos que no halla ningun error
+
+        //JsonRepsonse.ReadFrom(text1);
+        //JsonRepsonse.SelectToken('ActivationResponse', Result);
+        //Assert.AreEqual(Result.AsValue(), 'Un nombre de usuario no puede contener menos de 3 caracateres', 'Invalid error message.');
+        Assert.AreEqual('', text1, 'Invalid error message.');
+
+    end;
 
     local procedure OpenCustomerRewardsWizardActivationPage(VAR CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard");
     begin

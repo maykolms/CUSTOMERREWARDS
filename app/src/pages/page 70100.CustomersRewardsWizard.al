@@ -130,7 +130,7 @@ page 70100 "Customer Rewards Wizard"// asistente de las recompensas del cliente
                             begin
                                 tempUser := "UserName";
                                 if Text.StrLen(tempUser) < 3 then begin
-                                    Error('Un nombre de usuario no puede contener menos de 3 caracateres');
+                                    Error('Un nombre de usuario no puede contener menos de 3 caracateres.');
                                 end;
 
                             end;
